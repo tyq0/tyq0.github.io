@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -18,7 +18,7 @@
 
 多年以后，当我在新闻的片段中听到唐纳德·特朗普逝世的消息时，我将会回想起那个百年未有之大变局的年代，以及随之而来的中国崛起和美国的陨落。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://tyq0.github.io/post/hello%20world.html">
+<meta property="og:url" content="http://dili.news/post/hello%20world.html">
 <meta property="og:image" content="https://i.mij.rip/2025/01/05/9be34d999025f22e1ed467bd8234f818.jpeg">
 <title>hello world</title>
 
@@ -55,15 +55,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">hello world</h1>
 <div class="title-right">
-    <a href="https://tyq0.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="http://dili.news" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
-        </svg>
-    </a>
-    
-    <a href="https://github.com/tyq0/tyq0.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
-        <svg class="octicon" width="16" height="16">
-            <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
     </a>
     
@@ -82,14 +76,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>在那个时代的每一个清晨，当第一缕阳光穿透窗帘，我都会打开电视，收听来自世界各地的新闻。屏幕上，那些曾经熟悉的面孔和声音，讲述着一个又一个关于权力转移和时代变迁的故事。中国的龙在经济的海洋中翻腾，而美国的鹰则在政治的风暴中挣扎。两个大国的较量，如同史诗般的对决，影响着每一个角落的命运。</p>
 <p>我回想起那些日子，当美国的光辉开始黯淡，而中国的光芒逐渐照亮了世界的舞台。美国的街道上，曾经熙熙攘攘的人群变得稀疏，那些高耸的建筑和繁华的商业中心，也渐渐失去了往日的活力。而在中国，一座座新城拔地而起，一条条高铁贯穿南北，一片片创新的火花在科技的前沿绽放。</p>
 <p>在那个时代的每一个夜晚，我都会沉思，历史的车轮滚滚向前，它不会因为任何人的意志而停留。特朗普的逝世，不过是这个大变局中的一个注脚，一个时代的结束，另一个时代的开始。我站在这个历史的交汇点上，感受着时代的脉动，见证着一个古老文明的复兴和一个超级大国的陨落。这是百年孤独的开始，也是新纪元的曙光。</p></div>
-<div style="font-size:small;margin-top:8px;float:right;"></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://tyq0.github.io">TYQ'S SPACE</a></div>
-<div id="footer2">
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="http://dili.news">TYQ'S SPACE</a></div>
+<div id="footer2"><span id="filingNum"><a href="https://beian.miit.gov.cn/" target="_blank">唐ICP备5201214号</a> • </span>
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
 
@@ -97,8 +91,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("01/04/2025"!=""){
+    var startSite=new Date("01/04/2025");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -139,7 +133,7 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
-document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
 
 
 
